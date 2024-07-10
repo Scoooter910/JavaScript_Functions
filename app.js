@@ -18,6 +18,7 @@ function printOdds(count) {
         }
     }
 }
+printOdds(10);
 
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
@@ -39,6 +40,10 @@ function checkAge(userName, age) {
         console.log(aboveSixteen);
     }
 }
+checkAge("Name", 18); 
+checkAge("Name", 15);  
+checkAge(); 
+
 //Exercise 3 Section
 
 function checkPoint(x, y) {
@@ -68,6 +73,14 @@ function checkPoint(x, y) {
         console.log(`(${x}, ${y}) is at the origin`);
     }
 }
+whichQuadrant(0, 0);   
+whichQuadrant(0, 5);   
+whichQuadrant(5, 0);   
+whichQuadrant(1, 2);   
+whichQuadrant(-6, 18); 
+whichQuadrant(-3, -4); 
+whichQuadrant(2, -1);  
+
 //Exercise 4
 
 function checkTriangle(side1, side2, side3) {
@@ -87,6 +100,11 @@ function checkTriangle(side1, side2, side3) {
         return "Scalene triangle";
     }
 }
+triangleType(1, 2, 2); 
+triangleType(1, 1, 2); 
+triangleType(3, 3, 3); 
+triangleType(3, 4, 5); 
+
 //Exercise 5
 
 function analyzeDataUsage(planLimit, day, usage) {
@@ -120,3 +138,4 @@ function analyzeDataUsage(planLimit, day, usage) {
               + `Average daily use: ${averageDailyUse.toFixed(2)} GB/day\n`
               + `${message}`);
 }
+dataPlanStatus(100, 15, 56); 
