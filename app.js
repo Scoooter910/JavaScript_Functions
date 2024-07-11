@@ -73,13 +73,13 @@ function checkPoint(x, y) {
         console.log(`(${x}, ${y}) is at the origin`);
     }
 }
-whichQuadrant(0, 0);   
-whichQuadrant(0, 5);   
-whichQuadrant(5, 0);   
-whichQuadrant(1, 2);   
-whichQuadrant(-6, 18); 
-whichQuadrant(-3, -4); 
-whichQuadrant(2, -1);  
+checkPoint(0, 0);   
+checkPoint(0, 5);   
+checkPoint(5, 0);   
+checkPoint(1, 2);   
+checkPoint(-6, 18); 
+checkPoint(-3, -4); 
+checkPoint(2, -1);  
 
 //Exercise 4
 
@@ -100,10 +100,10 @@ function checkTriangle(side1, side2, side3) {
         return "Scalene triangle";
     }
 }
-triangleType(1, 2, 2); 
-triangleType(1, 1, 2); 
-triangleType(3, 3, 3); 
-triangleType(3, 4, 5); 
+checkTriangle(1, 2, 2); 
+checkTriangle(1, 1, 2); 
+checkTriangle(3, 3, 3); 
+checkTriangle(3, 4, 5); 
 
 //Exercise 5
 
@@ -138,4 +138,4 @@ function analyzeDataUsage(planLimit, day, usage) {
               + `Average daily use: ${averageDailyUse.toFixed(2)} GB/day\n`
               + `${message}`);
 }
-dataPlanStatus(100, 15, 56); 
+analyzeDataUsage(100, 15, 56); 
